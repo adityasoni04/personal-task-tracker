@@ -72,18 +72,18 @@ src/
 ### Installation
 
 1. **Clone the repository**
-   \`\`\`bash
-   git clone https://github.com/yourusername/personal-task-tracker.git
+   \`\`\`
+   git clone https://github.com/adityasoni04/personal-task-tracker.git
    cd personal-task-tracker
    \`\`\`
 
 2. **Install dependencies**
-   \`\`\`bash
+   \`\`\`
    npm install
    \`\`\`
 
 3. **Start the development server**
-   \`\`\`bash
+   \`\`\`
    npm start
    \`\`\`
 
@@ -92,7 +92,7 @@ src/
 
 ### Building for Production
 
-\`\`\`bash
+\`\`\`
 npm run build
 \`\`\`
 
@@ -294,7 +294,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📊 Project Stats
 
-- **Lines of Code**: ~2,500+
 - **Components**: 6 main components
 - **Utility Functions**: 20+ helper functions
 - **CSS Files**: 7 stylesheets with responsive design
