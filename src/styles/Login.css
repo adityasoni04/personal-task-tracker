@@ -1,0 +1,135 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem;
+}
+
+.login-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-header h1 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.login-header p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.login-form {
+  margin-bottom: 1.5rem;
+}
+
+.login-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-form label {
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.875rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.login-button {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 0.875rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.login-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.login-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.login-footer {
+  text-align: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.login-footer p {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.error-message {
+  background-color: #fee;
+  color: #c33;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #fcc;
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+
+  .login-header h1 {
+    font-size: 1.5rem;
+  }
+}
